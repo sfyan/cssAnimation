@@ -1,0 +1,137 @@
+body,html
+{
+height:100%;
+}
+
+#view
+{
+	width:600px;
+	height:600px;
+	margin:200px auto;
+}
+
+#box
+{
+
+	width:188px;
+	height:188px;
+	-webkit-transform-style:preserve-3d;
+	-webkit-perspective:0;
+	position: relative;
+	margin:0 auto;
+	-webkit-animation-name:animation;
+	-webkit-animation-timing-function:ease-in-out;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-duration:3s;
+	-webkit-transform-origin:94px 94px 0;
+}
+
+@-webkit-keyframes animation
+{
+	from,to{}
+	16%{-webkit-transform:rotateY(-90deg);}
+	33%{-webkit-transform:rotateY(-90deg)rotateZ(135deg);}
+	50%{-webkit-transform:rotateY(225deg)rotateZ(135deg);}
+	66%{-webkit-transform:rotateY(135deg)rotateZ(135deg);}
+	83%{-webkit-transform:rotateX(135deg);}
+}
+.faceA,.faceB,.faceC,.faceD,.faceE,.faceF
+{
+	
+	position: absolute;
+}
+
+.faceA
+{
+	-webkit-transform:
+	translateZ(-94px);
+}
+.faceB
+{
+	-webkit-transform:
+	rotateY(90deg)  translateZ(94px);
+}
+.faceC
+{
+	-webkit-transform:
+	rotateY(90deg)
+	rotateX(90deg)
+	translateZ(94px);
+}
+.faceD
+{
+	-webkit-transform:
+	rotateY(90deg) rotateX(0deg) translateZ(-94px);
+}
+.faceE
+{
+	-webkit-transform:
+	translateZ(94px);
+}
+.faceF
+{
+	-webkit-transform:
+	rotateX(90deg) translateZ(-94px);
+}
+
+
+.faceA div
+{
+	background-color: yellow;
+	width:60px;
+	height:60px;
+	float:left;
+	border-radius:10px;
+	border:1px solid white;
+
+}
+
+.faceB div
+{
+	background-color: red;
+	width:60px;
+	height:60px;
+	float:left;
+		border-radius:10px;
+		border:1px solid white;
+}
+
+.faceC div
+{
+	background-color: green;
+	width:60px;
+	height:60px;
+	float:left;
+		border-radius:10px;
+		border:1px solid white;
+}
+
+.faceD div
+{
+	background-color: blue;
+	width:60px;
+	height:60px;
+	float:left;
+		border-radius:10px;
+		border:1px solid white;
+}
+
+.faceE div
+{
+	background-color: cyan;
+	width:60px;
+	height:60px;
+	float:left;
+		border-radius:10px;
+		border:1px solid white;
+	}
+
+.faceF div
+{
+	background-color: purple;
+	width:60px;
+	height:60px;
+	float:left;
+		border-radius:10px;
+		border:1px solid white;
+}
